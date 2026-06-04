@@ -1,0 +1,5613 @@
+{
+	"info": {
+		"_postman_id": "5d667927-4a7e-4dab-9d5d-b54c103f1329",
+		"name": "Haus des Döners API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12632189"
+	},
+	"item": [
+		{
+			"name": "General API",
+			"item": [
+				{
+					"name": "Get App Version",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "platform",
+									"value": "ios",
+									"type": "text"
+								},
+								{
+									"key": "user_type",
+									"value": "admin",
+									"description": "admin,customer,driver",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/general_api/getAppVersion",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"general_api",
+								"getAppVersion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Language List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/general_api/language_list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"general_api",
+								"language_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Country Code List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/general_api/country_code_list?language_slug=en",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"general_api",
+								"country_code_list"
+							],
+							"query": [
+								{
+									"key": "language_slug",
+									"value": "en"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get CMS Page",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "cms_slug",
+									"value": "about-us",
+									"type": "text"
+								},
+								{
+									"key": "user_type",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/general_api/getCMSPage",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"general_api",
+								"getCMSPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel / Reject Reason List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "reason_type",
+									"value": "cancel",
+									"description": "cancel,reject",
+									"type": "text"
+								},
+								{
+									"key": "user_type",
+									"value": "customer",
+									"description": "admin,driver,customer",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/general_api/cancel_reject_reason_list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"general_api",
+								"cancel_reject_reason_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contact Us",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "first name",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "last name",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "palmas@xyz.com",
+									"type": "text"
+								},
+								{
+									"key": "res_phone_number",
+									"value": "7412741274",
+									"type": "text"
+								},
+								{
+									"key": "owner_phone_number",
+									"value": "7412741274",
+									"type": "text"
+								},
+								{
+									"key": "res_name",
+									"value": "Las Palmas",
+									"type": "text"
+								},
+								{
+									"key": "res_zip_code",
+									"value": "11729",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "Contract message",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/general_api/contactUs",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"general_api",
+								"contactUs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User API",
+			"item": [
+				{
+					"name": "User Registration",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "FirstName",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "LastName",
+									"value": "Doe",
+									"type": "text"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "8881212777",
+									"type": "text"
+								},
+								{
+									"key": "phone_code",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "Test@12",
+									"type": "text"
+								},
+								{
+									"key": "firebase_token",
+									"value": "9bOLys2W9s:APA91bEyVIf_5dv9sjq4E3DcJerTqrUyvYA06pgFffOle0hx4aMTbKd1zJFKSVCASPNLrSeoxnQH6AWGCSZvwFZagHQkE9HPsg-PClLNXyfP2d4tGAhQNxwV0PnZ5DD7i3SU2GiqE7X3",
+									"type": "text"
+								},
+								{
+									"key": "Email",
+									"value": "johndoe21@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/chirag/Documents/3.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/registration",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "phone_code",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "7537537537",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "Test@123",
+									"type": "text"
+								},
+								{
+									"key": "firebase_token",
+									"value": "firebase_token",
+									"type": "text"
+								},
+								{
+									"key": "Email",
+									"value": "erik123@yopmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify OTP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "7537537537",
+									"type": "text"
+								},
+								{
+									"key": "phone_code",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "social_media_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "forPasswordRecovery",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/verifyOTP",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"verifyOTP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Home",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "20.2166851",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "86.0179684",
+									"type": "text"
+								},
+								{
+									"key": "itemSearch",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "isEvent",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "food",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sortBy",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "distance",
+									"value": "450000000",
+									"type": "text"
+								},
+								{
+									"key": "page_no",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Calcutta",
+									"type": "text"
+								},
+								{
+									"key": "orderMode",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_type",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "offersFreeDelivery",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "availability",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getHome",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getHome"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "phone_code",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "7537537537",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/forgotpassword",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"forgotpassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Order Review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "review",
+									"value": "On time delivery",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "driver_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "90",
+									"type": "text"
+								},
+								{
+									"key": "driver_rating",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "driver_review",
+									"value": "Polite behaviour",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/add_OrderReview",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"add_OrderReview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Review",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "review",
+									"value": "Greate Food, very yummy dishes.",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/addReview",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"addReview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Erik",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "notification",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "Email",
+									"value": "erik123@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/editProfile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"editProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Booking Availability",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "people",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "booking_date",
+									"value": "24-12-2022 11:00 AM",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/checkBookingAvailability",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"checkBookingAvailability"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Table Booking Availability",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "people",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "booking_date",
+									"value": "24 Dec, 2022",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "1:30 PM",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "1:25 PM",
+									"type": "text"
+								},
+								{
+									"key": "no_of_people",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/checkTableBookingAvailability",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"checkTableBookingAvailability"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book Event",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "booking_date",
+									"value": "23-12-2021 3:58 PM",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "people",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "package_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/bookEvent",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"bookEvent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bookings",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "is_table",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getBooking",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Address",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "743",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/deleteAddress",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"deleteAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Booking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "event_id",
+									"value": "21",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/deleteBooking",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"deleteBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Address",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Dream Avenue",
+									"type": "text"
+								},
+								{
+									"key": "landmark",
+									"value": "National Park",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "37.1234569875",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "65.1586314858",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Ahmedabad",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "Gujarat",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "India",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "380060",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "is_main",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "address_label",
+									"value": "Ahmedabad",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/addAddress",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"addAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Address",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "showonly_main",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getAddress",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "Test@123",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test@123",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "Test@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/changePassword",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "subtotal",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "{\"items\":[{\"menu_id\":\"50\",\"name\":\"Black Coffee\",\"price\":null,\"offer_price\":\"\",\"menu_detail\":\"\",\"image\":\"http://ordomalaysia.com/order/uploads/menu/e42ce9eec7e63b11bf26791f1d82cd9b.jpeg\",\"receipe_detail\":\"\",\"availability\":\"Morning,Lunch,Dinner\",\"is_veg\":\"1\",\"is_customize\":\"1\",\"is_deal\":\"0\",\"status\":\"1\",\"addons_category_list\":[{\"addons_category\":\"Coffee Series\",\"addons_category_id\":\"12\",\"addons_list\":[{\"add_ons_id\":\"854\",\"add_ons_name\":\"Black Coffee Hot\",\"add_ons_price\":\"8.00\"},{\"add_ons_id\":\"855\",\"add_ons_name\":\"Black Coffee Cold\",\"add_ons_price\":\"9.00\"}]}],\"quantity\":1}]}",
+									"type": "text"
+								},
+								{
+									"key": "coupon_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon_type",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon_amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "order_date",
+									"value": "23-12-2021 10:27 AM",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "31",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "order_delivery",
+									"value": "Pickup",
+									"type": "text"
+								},
+								{
+									"key": "extra_comment",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "delivery_charge",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon_discount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tax_type",
+									"value": "Percentage",
+									"type": "text"
+								},
+								{
+									"key": "tax_rate",
+									"value": "10.00",
+									"type": "text"
+								},
+								{
+									"key": "pay_first",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "pay_later",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "wallet_balance",
+									"value": "414",
+									"type": "text"
+								},
+								{
+									"key": "is_parcel_order",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "is_wallet_applied",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "isLoggedIn",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "address_input",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "landmark",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/addOrder",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"addOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Listing",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "page_no",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/orderListing",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"orderListing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Coupon List",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "subtotal",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "order_delivery",
+									"value": "Delivery",
+									"description": "Delivery,DineIn",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "isLoggedIn",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "used_coupon",
+									"value": "CARTDIS,",
+									"description": "CARTDIS,DISCOUNT ONCART",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/couponList",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"couponList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Notification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "page_no",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getNotification",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Serviceability",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "order_delivery",
+									"value": "Delivery",
+									"type": "text"
+								},
+								{
+									"key": "users_latitude",
+									"value": "14.4619994",
+									"type": "text"
+								},
+								{
+									"key": "users_longitude",
+									"value": "14.4619994",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "driver_km",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "user_km",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "isLoggedIn",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/checkServiceability",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"checkServiceability"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Driver Tracking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "90",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/driverTracking",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"driverTracking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Order Delivered",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "90",
+									"type": "text"
+								},
+								{
+									"key": "is_delivered",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/checkOrderDelivered",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"checkOrderDelivered"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/logout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change User Language",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/changeUserLanguage",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"changeUserLanguage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Device Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "firebase_token",
+									"value": "token",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/updateDeviceToken",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"updateDeviceToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Food Type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getFoodType",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getFoodType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Restaurant Rating",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getRestaurantRating",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getRestaurantRating"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Restaurant Menu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "availability",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "food",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getRestaurantMenu",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getRestaurantMenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Restaurant Detail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "content_id",
+									"value": "1799",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "food",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "availability",
+									"value": "",
+									"description": "Morning,Lunch,Dinner",
+									"type": "text"
+								},
+								{
+									"key": "is_event",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getRestaurantDetail",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getRestaurantDetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add To Cart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1140",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "209",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "{\"items\":[{\"name\":\"Egg Rabdi\",\"image\":\"https://eyourdomain.com/uploads/menu/TzW2m0qVC6kr.jpg\",\"menu_id\":\"864\",\"menu_content_id\":\"2464\",\"quantity\":1,\"comment\":null,\"price\":\"17.00\",\"offer_price\":\"\",\"is_veg\":null,\"food_type_id\":\"274\",\"food_type_name\":\"cool cake\",\"is_customize\":0,\"in_stock\":\"1\",\"is_combo_item\":\"0\",\"combo_item_details\":\"\",\"is_deal\":\"0\",\"subTotal\":\"17.00\",\"itemTotal\":17},{\"name\":\"Cheese Omelette\",\"image\":\"\",\"menu_id\":\"861\",\"menu_content_id\":\"2461\",\"quantity\":1,\"comment\":null,\"price\":\"6.90\",\"offer_price\":\"\",\"is_veg\":null,\"food_type_id\":\"274\",\"food_type_name\":\"cool cake\",\"is_customize\":0,\"in_stock\":\"1\",\"is_combo_item\":\"0\",\"combo_item_details\":\"\",\"is_deal\":\"0\",\"subTotal\":\"6.90\",\"itemTotal\":6.9},{\"name\":\"Katki Kheema\",\"image\":\"https://yourdomain.com/uploads/menu/82jDFXSlRNv6.jpg\",\"menu_id\":\"865\",\"menu_content_id\":\"2465\",\"quantity\":4,\"comment\":null,\"price\":\"16.00\",\"offer_price\":\"\",\"is_veg\":null,\"food_type_id\":\"273\",\"food_type_name\":\"American Food\",\"is_customize\":0,\"in_stock\":\"1\",\"is_combo_item\":\"0\",\"combo_item_details\":\"\",\"is_deal\":\"0\",\"subTotal\":\"16.00\",\"itemTotal\":64},{\"name\":\"Regular Omelette\",\"image\":\"https://yourdomain.com/uploads/menu/xIYUKwVp8PW0.jpg\",\"menu_id\":\"853\",\"menu_content_id\":\"2456\",\"quantity\":509,\"comment\":null,\"price\":\"8.90\",\"offer_price\":\"\",\"is_veg\":null,\"food_type_id\":\"273\",\"food_type_name\":\"American Food\",\"is_customize\":1,\"in_stock\":\"1\",\"is_combo_item\":0,\"combo_item_details\":\"\",\"is_deal\":\"0\",\"subTotal\":268.9,\"itemTotal\":136870.09999999998,\"addons_category_list\":[{\"addons_category_id\":\"43\",\"addons_category\":\"Drinks\",\"addons_list\":[{\"add_ons_id\":\"377\",\"add_ons_name\":\"Manchurian\",\"add_ons_price\":\"70.00\"},{\"add_ons_id\":\"376\",\"add_ons_name\":\"Rajkot Mughlai\",\"add_ons_price\":\"60.00\"}]},{\"addons_category_id\":\"76\",\"addons_category\":\"Beverages\",\"addons_list\":[{\"add_ons_id\":\"378\",\"add_ons_name\":\"Spring roll\",\"add_ons_price\":\"40.00\"}]},{\"addons_category_id\":\"42\",\"addons_category\":\"Size\",\"addons_list\":[{\"add_ons_id\":\"379\",\"add_ons_name\":\"Romeo\",\"add_ons_price\":\"20.00\"},{\"add_ons_id\":\"380\",\"add_ons_name\":\"Tudka Saag\",\"add_ons_price\":\"30.00\"},{\"add_ons_id\":\"381\",\"add_ons_name\":\"Angur Rabdi\",\"add_ons_price\":\"40.00\"}]}]}]}",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Calcutta",
+									"type": "text"
+								},
+								{
+									"key": "cart_id",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "coupon_array",
+									"value": "['TREAT40']",
+									"type": "text"
+								},
+								{
+									"key": "earning_points",
+									"value": "30.00",
+									"type": "text"
+								},
+								{
+									"key": "is_wallet_applied",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "order_delivery",
+									"value": "PickUp",
+									"type": "text"
+								},
+								{
+									"key": "isLoggedIn",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "is_creditcard",
+									"value": "no",
+									"type": "text"
+								},
+								{
+									"key": "is_wallet_applied",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "tip_percent_val",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/addtoCart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"addtoCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Receipes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "page_no",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "recipe_search",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "timing",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "food",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getRecipes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getRecipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Pending Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "total_rate",
+									"value": "185",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "94",
+									"type": "text"
+								},
+								{
+									"key": "payment_option",
+									"value": "cod",
+									"type": "text"
+								},
+								{
+									"key": "transaction_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon_discount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon_amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon_type",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "dinein_tip",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "coupon_array",
+									"value": "[\"DINE -IN\"]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/updatePendingOrder",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"updatePendingOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pay Later Orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "unpaid_orders",
+									"value": "94",
+									"description": "94,95",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getPayLaterOrders",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getPayLaterOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Request QR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "table_id",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "40.231467",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "22.341278",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/addRequestQR",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"addRequestQR"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Current DineIn Orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getCurrentDineInOrders",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getCurrentDineInOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apply Coupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "coupon_array",
+									"value": "[\"DINE -IN \"]",
+									"type": "text"
+								},
+								{
+									"key": "order_delivery",
+									"value": "DineIn",
+									"type": "text"
+								},
+								{
+									"key": "subtotal",
+									"value": "60",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "63.36",
+									"type": "text"
+								},
+								{
+									"key": "wallet_amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "1799",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/applyCoupon",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"applyCoupon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users Earning Points",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getUsersEarningPoints",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getUsersEarningPoints"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Wallet History",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "page_no",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Calcutta",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getWalletHistory",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getWalletHistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Social",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "social_media_id",
+									"value": "117750594536877195600",
+									"type": "text"
+								},
+								{
+									"key": "firebase_token",
+									"value": "firebasetoken",
+									"type": "text"
+								},
+								{
+									"key": "Email",
+									"value": "emailid@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "login_type",
+									"value": "google",
+									"description": "facebook,google",
+									"type": "text"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "FirstName",
+									"value": "first name",
+									"type": "text"
+								},
+								{
+									"key": "LastName",
+									"value": "last name",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Calcutta",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/social",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"social"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send OTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "social_media_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "7537537537",
+									"type": "text"
+								},
+								{
+									"key": "phone_code",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "forPasswordRecovery",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "isForGuest",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "guest_first_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "guest_email",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/sendOTP",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"sendOTP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1195",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/deleteAccount",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"deleteAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payment Method",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "currency_code",
+									"value": "usd",
+									"type": "text"
+								},
+								{
+									"key": "is_dine_in",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "isLoggedIn",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/payment_method",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"payment_method"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "isLoggedIn",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "exp_month",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "exp_year",
+									"value": "2028",
+									"type": "text"
+								},
+								{
+									"key": "cvc",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "card_number",
+									"value": "4242424242424242",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "US",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "11729",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/addNewCard",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"addNewCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "isLoggedIn",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "payment_method_id",
+									"value": "pi_3Lxpj3Dx91eqc6CT2Ai8KOjm",
+									"type": "text"
+								},
+								{
+									"key": "pay_method_fingerprint",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/saveCard",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"saveCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "isLoggedIn",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "payment_method_id",
+									"value": "pm_1MHiY4Dx91eqc6CTQGhJaFAb",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/deleteCard",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"deleteCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Saved Cards",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "isLoggedIn",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getAllSavedCards",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getAllSavedCards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "isLoggedIn",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "payment_method_id",
+									"value": "pm_1MHiY4Dx91eqc6CTQGhJaFAb",
+									"type": "text"
+								},
+								{
+									"key": "exp_month",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "exp_year",
+									"value": "2028",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "US",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "11729",
+									"type": "text"
+								},
+								{
+									"key": "is_default_card",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/updateCard",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"updateCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Payment Method",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "exp_month",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "exp_year",
+									"value": "2028",
+									"type": "text"
+								},
+								{
+									"key": "cvc",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "card_number",
+									"value": "424242424242",
+									"type": "text"
+								},
+								{
+									"key": "currency",
+									"value": "usd",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "payment_method_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "save_card_flag",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "us",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "11729",
+									"type": "text"
+								},
+								{
+									"key": "is_default_card",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/createPaymentMethod",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"createPaymentMethod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Card Payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "trans_id",
+									"value": "pi_3Lxpj3Dx91eqc6CT2Ai8KOjm",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/checkCardPayment",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"checkCardPayment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Paypal Access Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/paypalAccessToken",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"paypalAccessToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "payment_method",
+									"value": "stripe",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "90",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "currency",
+									"value": "usd",
+									"type": "text"
+								},
+								{
+									"key": "exp_month",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "exp_year",
+									"value": "2025",
+									"type": "text"
+								},
+								{
+									"key": "cvc",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "card_number",
+									"value": "424242424242",
+									"type": "text"
+								},
+								{
+									"key": "isLoggedIn",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/online_payment",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"online_payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "90",
+									"type": "text"
+								},
+								{
+									"key": "cancel_reason",
+									"value": "Wrong item ordered.",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "other_reason",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/cancelOrder",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"cancelOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FAQs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/FAQs",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"FAQs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FAQs Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/FAQs",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"FAQs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Driver Tip",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "90",
+									"type": "text"
+								},
+								{
+									"key": "driver_tip",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "tip_transaction_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tip_percent_val",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "payment_option",
+									"value": "cod",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/add_driver_tip",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"add_driver_tip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wallet TopUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "transaction_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/walletTopUp",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"walletTopUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Schedule Delivery",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "97",
+									"type": "text"
+								},
+								{
+									"key": "scheduled_date",
+									"value": "2022-12-24",
+									"type": "text"
+								},
+								{
+									"key": "slot_open_time",
+									"value": "10:25",
+									"type": "text"
+								},
+								{
+									"key": "slot_close_time",
+									"value": "23:30",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/checkScheduleDelivery",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"checkScheduleDelivery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Apple Payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "currency",
+									"value": "usd",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/createApplePayment",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"createApplePayment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Home Filters",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/getHomeFilters",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"getHomeFilters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant_ErrorReport",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "report_topic",
+									"value": "phone_number,address,menu,other",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "tes1t@test.com",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "test message test message",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/Restaurant_ErrorReport",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"Restaurant_ErrorReport"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin API",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_code",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "9123123129",
+									"type": "text"
+								},
+								{
+									"key": "Email",
+									"value": "admin@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "Test@123",
+									"type": "text"
+								},
+								{
+									"key": "firebase_token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "Test@123",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test@123",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "Test@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/changePassword",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Email",
+									"value": "new7@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/forgotpassword",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"forgotpassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "515",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "new7@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "New",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Branch Admin",
+									"type": "text"
+								},
+								{
+									"key": "notification",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/editProfile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"editProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CMS Page",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "cms_slug",
+									"value": "about-us",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/getCMSPage",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"getCMSPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Listing",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "page_no",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tabType",
+									"value": "past",
+									"description": "new/inProgress/past",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "search_data",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/orderListing",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"orderListing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/logout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order History",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "192",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/getOrderHistory",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"getOrderHistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Driver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "driver_id",
+									"value": "76",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "is_reassign",
+									"value": "1",
+									"description": "0/1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/assignDriver",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"assignDriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accept Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "98",
+									"type": "text"
+								},
+								{
+									"key": "choose_delivery_method",
+									"value": "internal_drivers",
+									"type": "text"
+								},
+								{
+									"key": "order_mode",
+									"value": "delivery",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/acceptOrder",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"acceptOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reject Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "98",
+									"type": "text"
+								},
+								{
+									"key": "reject_reason",
+									"value": "other",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/rejectOrder",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"rejectOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "order_status",
+									"value": "complete",
+									"type": "text"
+								},
+								{
+									"key": "cancel_reason",
+									"value": "No reason",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/updateOrderStatus",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"updateOrderStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change User Language",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/changeUserLanguage",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"changeUserLanguage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Device Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "firebase_token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/updateDeviceToken",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"updateDeviceToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pay Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "payment_method",
+									"value": "cod",
+									"type": "text"
+								},
+								{
+									"key": "transaction_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/pay_order",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"pay_order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "98",
+									"type": "text"
+								},
+								{
+									"key": "updated_items",
+									"value": "[{\"item_name\":\"Rainbowcake\",\"menu_content_id\":\"1556\",\"item_id\":\"441\",\"qty_no\":1,\"comment\":\"\",\"rate\":\"10.00\",\"offer_price\":\"\",\"order_id\":69,\"is_customize\":1,\"is_combo_item\":0,\"combo_item_details\":\"\",\"is_deal\":\"0\",\"itemTotal\":25,\"order_flag\":1,\"addons_category_list\":[{\"addons_category_id\":\"42\",\"addons_category\":\"Size\",\"addons_list\":[{\"add_ons_id\":\"117\",\"add_ons_name\":\"small\",\"add_ons_price\":\"15.00\"}]}]}]",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "partial_refund_reason",
+									"value": "refund reason",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/edit_order",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"edit_order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Print Order Receipt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "8200964540",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/printOrderReceipt",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"printOrderReceipt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Initiate Refund",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "refund_reason",
+									"value": "refund",
+									"type": "text"
+								},
+								{
+									"key": "partial_refundedamt",
+									"value": "10.20",
+									"type": "text"
+								},
+								{
+									"key": "partial_refundedchk",
+									"value": "partial",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/initiateRefund",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"initiateRefund"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Restaurant Mode",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_content_id",
+									"value": "1799",
+									"type": "text"
+								},
+								{
+									"key": "off_time",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_schedule_mode",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/updateRestaurantMode",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"updateRestaurantMode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assigned Restaurants",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "622",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/branch_admin_api/getAssignedRestaurants",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"branch_admin_api",
+								"getAssignedRestaurants"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Driver API",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "6060606060",
+									"type": "text"
+								},
+								{
+									"key": "phone_code",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "Email",
+									"value": "testdriver@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "Test@123",
+									"type": "text"
+								},
+								{
+									"key": "firebase_token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "23.0225",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "72.5714",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Calcutta",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Email",
+									"value": "testdriver@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/forgotpassword",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"forgotpassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "rating",
+									"value": "good",
+									"type": "text"
+								},
+								{
+									"key": "review",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "order_user_id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/addReview",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"addReview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Mark",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "M",
+									"type": "text"
+								},
+								{
+									"key": "driver_temperature",
+									"value": "2.40c",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/editProfile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"editProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "Test@123",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test@123",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "Test@123",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/changePassword",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accept Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"description": "195",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "69",
+									"type": "text"
+								},
+								{
+									"key": "order_status",
+									"value": "preparing",
+									"type": "text"
+								},
+								{
+									"key": "driver_map_id",
+									"value": "359",
+									"type": "text"
+								},
+								{
+									"key": "cancel_reason",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"description": "is order status cancel then set this",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "Asia/Kolkata",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/acceptOrder",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"acceptOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "UTC",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/getallOrder",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"getallOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deliver Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "90",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "delivered",
+									"type": "text"
+								},
+								{
+									"key": "subtotal",
+									"value": "197.97",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/deliverOrder",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"deliverOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Commission List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "user_timezone",
+									"value": "UTC",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/getCommissionList",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"getCommissionList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Driver Tracking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "82.890000",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "80.890000",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/driverTracking",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"driverTracking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/logout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change User Language",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/changeUserLanguage",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"changeUserLanguage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Device  Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "firebase_token",
+									"value": "e2f9akzYR5SPDtrGbhcYUN:APA91bEjZFj7H_590XQ2ntbc7p0t68raacC9UkUhltnrRWn27W5BEqZby25b89ngENWEdod6Lej_q5N",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/updateDeviceToken",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"updateDeviceToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "90",
+									"type": "text"
+								},
+								{
+									"key": "driver_map_id",
+									"value": "360",
+									"type": "text"
+								},
+								{
+									"key": "cancel_reason",
+									"value": "other",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/cancel_order",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"cancel_order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Collect Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "90",
+									"type": "text"
+								},
+								{
+									"key": "driver_map_id",
+									"value": "358",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/collect_order",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"collect_order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Detail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "90",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/get_order_detail",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"get_order_detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Driver Current Lang",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/getDriverCurrentLang",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"getDriverCurrentLang"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Driver Availability Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "319",
+									"type": "text"
+								},
+								{
+									"key": "availability_status",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/change_driver_availability_status",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"change_driver_availability_status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel Reject ReasonList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_slug",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "reason_type",
+									"value": "cancel",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/driver_api/cancel_reject_reason_list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"driver_api",
+								"cancel_reject_reason_list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

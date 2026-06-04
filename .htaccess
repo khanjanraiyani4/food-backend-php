@@ -1,0 +1,10 @@
+DirectoryIndex index.php
+RewriteEngine on
+RewriteBase /
+
+RewriteCond $1 !^(index\.php|(.*)\.swf|forums|images|css|downloads|assets|cometchat|jquery|js|robots\.txt|favicon\.ico)
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://yourdomain.com/$1 [R,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ ./index.php?$1 [L,QSA]

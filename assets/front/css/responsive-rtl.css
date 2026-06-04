@@ -1,0 +1,354 @@
+@media (min-width:1200px) and (max-width:1600px) {
+	.container { padding-left: 60px; padding-right: 60px; }
+}
+@media (max-width:1600px) {
+	.user-page .user-form .content-wrapper { margin-right: 5.2rem; }
+	.float-form input.form-control:focus~label { top: -19px; }
+	.contact-form { max-width: 488px; padding: 2.1rem 2.4rem 2.4rem; }
+	.page-wrapper { padding: 3rem 0 3rem; }
+	.widgets li>a>i { margin-right: 0; }
+	.ordering-btn .btn { padding: 0.4rem 0.4rem; }
+	.ordering-box-bottom>span { font-size: 16px; }
+	.link { font-size: 18px; }
+	.user-page h3 { padding-bottom: 20px; }
+	.user-page h3::after { width: 90px; height: 4px; }
+	.form-body .check-box label span { font-size: 18px; }
+	.form-body .check-box label span::before { top: 2px; }
+	.user-form .logo a>img { max-width: 120px; }
+	.user-page .float-form .form-control { height: 40px; font-size: 14px; }
+	.user-page .float-form label { font-size: 14px; top: 8px; }
+	.login_social a.btn-social { line-height: 20px; }
+	.login_social a.btn-social:before { background-position: 8px 9px; background-size: 16px; }
+	.or-underline span { padding: 5px 10px; }
+	.user-form .action-button .btn { font-size: 14px; padding: 3px 20px; line-height: 1; }
+	.login_social a.btn-social { font-size: 12px; line-height: 14px; }
+	.or-underline { margin-bottom: 0; }
+	.user-form .float-form input:-webkit-autofill+label, .user-form .float-form .form-control:focus + label, .user-form .float-form .form-control:not(:placeholder-shown) + label, .user-form .float-form .form-control:not(:placeholder-shown) + div + label { font-size: 14px; top: -14px; }
+	.user-form .float-form input.form-control:focus~label { top: -11px; }
+	.user-page .user-form .content-wrapper { margin: 10px auto; }
+	.or-underline span { font-size: 16px; }
+	.already-acc { margin-top: 10px; margin-bottom: 0; }
+	.user-page .float-form .form-group.edit-profile-img .edit-img input#Image { margin-top: 0; }
+}
+@media (max-width:1440px) {
+	.header-inner nav>ul>li>a { font-size: 15px; padding: 24px 10px; }
+	.your-doorstep>p { font-size: 22px; }
+	.search-form .form-group input[type="text"] { font-size: 16px; }
+	.cart-empty h6 { font-size: 12px; }
+}
+@media (min-width:1500px) {
+	.rest-box-row .col-lg-4 { max-width: 25%; }
+	.order-food-section .restaurant-box-row .col-lg-6 { max-width: 33.33%; padding: 0 15px; }
+	.container { max-width: 100% !important; padding: 0 80px; width: 100%; }
+}
+@media (max-width:1400px) {
+	.home-banner { padding: 5rem 0 7rem; }
+	.dropbtn img { max-width: 16px; }
+	.user-page .user-form .content-wrapper { margin-right: auto; }
+	.user-form .logo { margin-bottom: 2.8rem; }
+	.float-form input.form-control { padding: 0 20px; }
+	.float-form input.form-control:focus~label { top: -18px; }
+	.std-modal .modal-header .modal-title { font-size: 26px; }
+	.std-modal .modal-body p { font-size: 22px; }
+	.contact-form h2 { margin-bottom: 2rem; font-size: 22px; }
+	.contact-form { max-width: 420px; margin: auto; }
+	.widget-title { font-size: 18px; }
+	.widgets li>a { font-size: 15px; }
+	.widgets p { font-size: 15px; }
+	.ordering-btn .btn { padding: 0.4rem 0.3rem; font-size: 12px; }
+	.dropbtn { padding: 0.6rem 0.6rem; font-size: 16px; }
+	.signin-btn .btn { font-size: 16px; }
+	.noti-cart>ul>li { padding: 0 6px; }
+	.header-user .user-img { width: 45px; height: 45px; margin-right: 8px; }
+}
+@media (max-width:1280px) {
+	.home-banner { padding: 6rem 0 9rem; }
+}
+@media (min-width:1200px) {
+	.container { max-width: 1550px; }
+	.contact-us-wrapper .widgets .widgets-1 { flex: 0 0 45%; max-width: 45%; }
+	.contact-us-wrapper .widgets { margin-right: -10px; margin-left: -10px; }
+	.contact-us-wrapper .widgets [class*="col-"] { padding-right: 10px; padding-left: 10px; }
+	.contact-us-wrapper .widgets .widgets-1 { flex: 0 0 45%; max-width: 40%; }
+	.contact-us-wrapper .widgets [class*="col-"]:not(.widgets-1) { flex: 0 0 30%; max-width: 30%; }
+	.ordering-box-bottom { flex-wrap: wrap; }
+	.ordering-box-bottom .ordering-btn { margin-top: 10px; width: 100%; text-align: center; }
+	.ordering-box-bottom ul { width: 100%; justify-content: center; }
+	.tab--boddy { min-height: 500px; }
+	.rating--tab--wrapper { display: flex; flex-wrap: wrap; align-items: flex-start; }
+	#review .detail-list-title { width: 100%; margin-bottom: 30px; }
+	.rating--tab--wrapper .review-box-main { width: calc(100% - 500px); padding-right: 35px; }
+	.review-img .user-images img { border-radius: 5px; }
+	.review-content .user-name-date .review-star span { font-size: 13px; min-width: 45px; min-height: 22px; line-height: 22px; }
+	.review-content .user-name-date { margin-bottom: 0; }
+	.review-list .review-content p { font-size: 16px; }
+	.rating--tab--wrapper .rating-review-main .review-progress { width: 100%; border-right: none; padding-right: 0; margin-bottom: 30px; }
+	.rating--tab--wrapper .rating-review-main .review-progress .progress-main { padding-left: 0; width: 100%; }
+	.rating--tab--wrapper .rating-review-main .rate-restaurant { width: 100%; padding: 0; }
+	.rating-review-main { border-radius: 0; box-shadow: none; margin-bottom: 0; padding: 0; width: 550px; }
+}
+@media (max-width:1199px) {
+	.header-inner nav>ul>li>a { padding: 11px 10px; display: block; }
+	.user-form .logo { margin-bottom: 1.8rem; }
+	.user-page h3 { margin-bottom: 1.3rem; padding-left: 10px; }
+	.links { margin: 1.2rem 0 2rem; }
+	.footer-logo img { height: 50px; }
+	.my-wallet-list>h6 { width: calc(100% - 120px); padding: 0; text-align: left; font-size: 14px; }
+	.my-wallet-detail>p, .my-wallet-detail>h6 { font-size: 16px; }
+	.my-wallet-list>p { font-size: 14px; width: 120px; }
+	.my-wallet-list span.icons_money { width: 100%; margin-bottom: 10px; }
+	.profile-page-title .nav-tabs .nav-link { font-size: 13px; padding: 5px; }
+}
+@media (max-width:1023px) {
+	.pnProductNavslider ul { padding: 10px 0; }
+	.slider-checkbox-main { padding: 0; }
+	.pnProductNavslider .slick-arrow { display: none !important; }
+	.tns-controls { display: none !important; }
+	.login_social a.btn-social:before { background-size: 16px; background-position: 8px 9px; }
+	.login_social a.btn-social { font-size: 14px; }
+	.login_social a.btn-social { max-width: 100%; width: 100%; text-align: center; font-size: 14px; margin: 0; }
+	.login_social a.btn-social.btn-facebook { margin-bottom: 15px; }
+	.login_radio { width: 100%; margin-bottom: 10px; }
+	.float-form .form-group .login_radio label { border-radius: 5px !important; }
+	.guest_chckout_btn { width: 100%; font-size: 14px; }
+	.float-form .form-group.edit-profile-img label { font-size: 14px; }
+}
+@media (min-width:992px) and (max-width:1600px) {
+	.header-area .inner-pages-form .form-group.search-restaurant input[type="button"] { font-size: 14px; padding: 5px 5px; }
+	.signin-btn .btn, .header-right .dropdown .dropbtn { font-size: 13px; padding: 3px 5px; }
+	.header-area .inner-pages-form .form-group.search-restaurant input[type="text"] { font-size: 14px; background-size: 14px auto; padding: 0 30px; background-position: right 10px center; width: 200px; height: 35px; }
+	.header-area .inner-pages-form .form-group.search-restaurant .order_mode { padding: 0 10px 0 25px; background-position: left 8px center; font-size: 13px; background-size: 10px auto; }
+	.header-area .home_auto_location .auto_location { width: 30px; height: 35px; }
+	.signin-btn { margin-right: 5px; margin-left: 0; }
+	.noti-cart>ul>li a { font-size: 16px; }
+	.noti-cart>ul>li a>span { line-height: 16px; min-width: 16px; min-height: 16px; }
+}
+@media (min-width:992px) and (max-width:1199px) {
+	.header-area .inner-pages-form .form-group.search-restaurant input[type="text"] { padding: 0 30px 0 30px; width: 130px; }
+}
+@media (max-width:991px) {
+	.user-form .logo a>img { max-width: 175px; }
+	.contact-form { padding: 2.1rem 1.4rem 2.4rem; }
+	.feedback-contents:before { background-size: cover; width: 60px; height: 60px; }
+	.feedback-contents { padding-left: 10px; padding-top: 20px; }
+	.feedback-contents .review-list { padding-bottom: 15px; margin-bottom: 15px; }
+	.feedback-contents .view-all { font-size: 16px; padding: 5px 15px; }
+	.feedback-contents .review-list .review-content { width: 100%; }
+	.feedback-contents .user-name-date h3 { font-size: 16px; }
+	.feedback-image { margin-bottom: 30px; }
+	.inner-pages-form .form-group.search-restaurant input[type="button"] { border-radius: 5px 0 0 5px; padding-left: 20px; padding-right: 20px; font-size: 0; background-image: url('../images/search.svg'); background-size: 17px auto; background-position: left 11px center; background-repeat: no-repeat; width: auto; height: 40px !important; }
+	.inner-pages-form .form-group.search-restaurant input[type="button"]:focus, .inner-pages-form .form-group.search-restaurant input[type="button"]:hover, .inner-pages-form .form-group.search-restaurant input[type="button"]:active { background-color: #E24A4B; background-color: var(--main-color); background-image: url('../images/search.svg'); }
+	.inner-pages-form .form-group.search-restaurant .bootstrap-tagsinput { width: calc(100% - 44px); }
+	.inner-pages-form .form-group.search-restaurant .bootstrap-tagsinput input[type="text"] { width: 100%; }
+	.search-form .form-group input[type="button"] { padding: 10px; }
+}
+@media (min-width:768px) {
+	.form-control:focus { box-shadow: none; border: 1px solid #E4E4E4; }
+}
+@media (max-width:767px) {
+	.logo img { height: 40px; }
+	.footer-logo img { height: 40px; }
+	#example-one { top: 52px; width: 280px; }
+	.your-doorstep>p { font-size: 18px; }
+	.pnProductNavslider ul li a { font-size: 14px; padding: 5px 0; }
+	.pnProductNavslider .owl-nav .owl-prev, .pnProductNavslider .owl-nav .owl-next { width: 10px; height: 30px; line-height: 40px; }
+	.pnProductNavslider .owl-prev:before, .pnProductNavslider .owl-next:before { font-size: 10px; }
+}
+@media (max-width:767px) {
+	.or-underline span { background: #eaeae9; }
+	.checkout-account .or-underline span { background: #fff; }
+	.order-food-section .restaurant-box-row .col-lg-6 { margin-bottom: 20px; }
+	.slider-arrow .arrow>div { width: 30px; height: 30px; }
+	.slider-arrow .arrow>div::before { line-height: 32px; }
+	.openclose { font-size: 10px; padding: 2px 3px; width: 58px; }
+	.home-banner { padding: 4rem 0 6rem; }
+	.popular-rest-box .popular-rest-img strong { padding: 1px 4px; font-size: 12px; }
+	.popular-rest-box .popular-rest-img .display_distance strong::before { width: 15px; height: 15px; }
+	.popular-rest-box .popular-rest-img, .order-food-section .restaurant-box-row .popular-rest-img { height: 130px; }
+	.rest-box-row .col-sm-12:nth-child(even), .order-food-section .restaurant-box-row .col-lg-6:nth-child(even) { padding-left: 5px; }
+	.rest-box-row .col-sm-12:nth-child(odd), .order-food-section .restaurant-box-row .col-lg-6:nth-child(odd) { padding-right: 5px; }
+	.type-food-option .detail-list { padding-right: 5px; }
+	.rest-box-row .col-sm-12, .order-food-section .restaurant-box-row .col-lg-6 { max-width: 50%; padding: 0 9px; }
+	.rest-box-row .col-sm-12.col-lg-12 { max-width: 100%; }
+	.food-filter { margin: 0 -9px 20px; top: 0; }
+	.popular-rest-content h3 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+	.popular-rest-content { padding: 0 5px; }
+	.popular-rest-box { margin-bottom: 20px; }
+	.profile-page-title .nav-tabs .nav-link { font-size: 11px; padding: 7px 4px 6px 3px; min-width: 120px; }
+	.edit-profile .modal-body { padding-top: 0; }
+	.user-page .row .login-bg { display: none; }
+	.user-page .user-form { background: #cdcdcd url('../images/bg-login.png') no-repeat; background-size: cover; }
+	.user-page .user-form:after { position: absolute; top: 0; left: 0; content: ""; width: 100%; height: 100%; z-index: 0; }
+	.user-page .content-wrapper { position: relative; z-index: 1; padding: 1.5rem; background: rgba(255, 255, 255, 0.9); border-radius: 10px; }
+	.user-form .logo { margin-bottom: 1rem; text-align: center; }
+	.form-group { margin-bottom: 30px; }
+	.user-page h3 { margin-bottom: 2rem; }
+	.link { font-size: 18px; }
+	.float-form input.form-control { font-size: 12px; }
+	.float-form .form-group label { font-size: 12px; border-radius: 6px; line-height: 26px; }
+	.float-form input:-webkit-autofill+label, .float-form .form-control:focus+label, .float-form .form-control:not(:placeholder-shown)+label, .float-form .form-control:not(:placeholder-shown)+div+label { font-size: 12px; }
+	.float-form input.form-control:focus~label { font-size: 20px; }
+	.std-modal .modal-header .modal-title { font-size: 20px; }
+	.std-modal .modal-body p { font-size: 18px; line-height: 22px; }
+	.page-wrapper { padding: 2rem 0 2rem; }
+	.contact-form { padding: 1rem; margin-top: 1em; }
+	.app-download { margin: 0 auto; }
+	.driver-app-content { text-align: center; }
+	.search-restaurant input[type="button"] { height: 50px; line-height: 1; }
+	.dropbtn img { display: none; }
+	.dropbtn { padding: 0.1rem 0.5rem; }
+	.header-user .user-img { width: 25px; height: 25px; margin-right: 3px; margin-left: 3px; }
+	.float-form .form-control:not(:placeholder-shown)~label { font-size: 12px !important; }
+	.order-food-section .rest-box-row .col-sm-12, .popular-restaurants .rest-box-row .col-sm-12 { max-width: 100%; padding: 0 15px; }
+	.header-right .dropdown .dropbtn { padding: 0 5px; font-size: 12px; height: 25px; }
+	.noti-cart>ul>li a { font-size: 20px; padding-top: 10px; }
+	.signin-btn a.btn::before { font-size: 13px; line-height: 1.5; }
+	.signin-btn a.btn { padding: 1px 5px; }
+	.noti-cart>ul>li a>span { min-width: 16px; min-height: 16px; line-height: 16px; font-size: 12px; top: 8px; }
+	.popular-rest-box .popular-rest-img { height: 150px; }
+	.add-cart-item .number span { width: 16px; height: 16px; line-height: 18PX; font-size: 8px }
+	.add-cart-item .number input[type="text"], .add-cart-item .number input[type=number] { height: auto; width: 28px; font-size: 14px; }
+	.float-form input.form-control:focus~label { font-size: 12px; top: -12px; }
+	.modal-form .float-form .form-control:focus~label { font-size: 12px; }
+	.text-center.forgot-image { max-width: 180px; margin: auto; }
+	#forgot-pass-modal .modal-form h2 { font-size: 18px; margin-bottom: 0; }
+	#forgot-pass-modal .modal-form .float-form .form-group { margin-top: 15px; }
+	#forgot-pass-modal .modal-form .float-form .action-button { text-align: right; }
+	.action-button .btn { font-size: 13px; padding: 3px 10px; margin-right: 10px; }
+	.order-food-section .restaurant-box-row .col-lg-6 { max-width: 100%; }
+	.order-food-section .restaurant-box-row .order-btn { display: none; }
+	.order-btn a.btn { font-size: 13px; padding: 2px 10px; }
+	.inner-pages-form .form-group.delivery-address input[type="text"] { margin-bottom: 10px; }
+	.cart-content-table table>tbody>tr>td.close-btn-cart { display: none; }
+	.cart-content-table table>tbody>tr>td.item-name { width: 65%; vertical-align: middle; padding-top: 8px; }
+	.add-address-btn .btn { font-size: 13px; padding: 2px 6px; }
+	.ordering-box-bottom ul li:last-of-type { margin-right: 0; }
+	.ordering-box-bottom ul li { font-size: 12px; padding: 3px 4px; }
+	.ordering-btn .btn { padding: 3px 4px; }
+	.edit-profile .float-form .form-control:not(:placeholder-shown)~label, .edit-profile .float-form .form-control:focus~label, #add-address .float-form .form-control:not(:placeholder-shown)~label, #add-address .float-form .form-control:focus~label { font-size: 16px; }
+	.edit-profile .float-form .form-group label, #add-address .float-form .form-group label { font-size: 14px; }
+	.address-add-btn .btn { font-size: 14px; padding: 2px 15px; }
+	.action-btn .btn { font-size: 13px; padding: 2px 10px; }
+	.current-location>h5 { margin-bottom: 12px; }
+	.detail-content-middel .detail-list-content .detail-list-text h4 { font-size: 14px; }
+	.detail-content-middel .detail-list-content .right-price strong { font-size: 14px; }
+	.type-food-option .detail-list::before { font-size: 13px; }
+	.noti-list-text>h6 { font-size: 14px; }
+	.noti-list-text>p { font-size: 13px; }
+	.noti-popup .noti-title h5 { font-size: 16px; }
+	.ordering-box-bottom>span { font-size: 14px; }
+	.ordering-box-bottom>span.date-icon::before { top: 0; font-size: 14px; }
+	.ordering-box-bottom>span.relivered-icon::before { top: 0; }
+	.availability-popup .btn { font-size: 13px; padding: 5px; margin: 2px; }
+	.contact-us-wrapper .widgets { margin-top: 1rem; }
+	.driver-app .col-md-6.col-lg-4 { order: 2 }
+	.form-content-pay h2 { font-size: 24px; }
+	.payment-header .logo img { height: 40px; }
+	.form-content-pay { margin: 40px auto 60px; }
+	.modal-dialog.modal-dialog-centered.verify_otp_model { max-width: 320px; margin: .5rem auto; }
+	.user_otp_divmodal input { width: 35px; font-size: 20px; }
+	.form-group.otp-form { max-width: 260px; }
+	.verify_otp_model .close { top: 0; left: 0; width: 25px; height: 25px; border-radius: 0 0 0 5px; font-size: 10px; }
+	.phn_code_container { width: 60px; }
+	.phn_code_container input { padding: 0 10px !important; }
+	.phn_num_container { width: calc(100% - 61px); }
+	.current-location.coupon_select .btn { font-size: 12px; padding: 3px 5px }
+	.coupon_detail h4, .coupon_detail h5 { font-size: 16px; }
+	button.btn.coupon_apply { font-size: 14px; }
+	.coupon_title { font-size: 16px; }
+	.modal-variation figure { max-width: 100% !important; padding-top: 60% !important; position: relative !important; }
+	.modal-variation form { margin-right: 0; max-height: initial !important; min-height: initial !important; }
+	.driver_tip_btns .btn { padding: 3px 10px; font-size: 12px; }
+	.ordering-box-img strong { padding: 3px 5px; font-size: 12px; }
+	.cart-content-table table>tbody>tr>td { padding-top: 8px; }
+	.cart-content-table table>tbody>tr>td.item-img-main { padding-top: 11px; }
+	.transaction_details table>tbody>tr>td { vertical-align: top; }
+	.guest_chckout_btn { font-size: 13px; padding: 10px; }
+	.review-all span { font-size: 14px; min-width: 60px; line-height: 25px; min-height: 25px; }
+	.resttabs a .btn { font-size: 12px; padding: 10px; }
+	.slider-checkbox-main ul li a { font-size: 12px; }
+}
+@media (max-height:679px) {
+	.user-form .logo { margin-bottom: 15px; }
+	.user-page h3 { margin-bottom: 10px; padding-bottom: 10px; font-size: 20px; }
+	#form_front_login .links { margin: 10px 0; }
+	.form-group { margin-bottom: 20px; }
+	.user-form .form-group { margin-bottom: 15px; }
+}
+@media (min-width:576px) {
+	.modal-dialog { max-width: 669px; }
+}
+@media (max-width:576px) {
+	.link { font-size: 14px; }
+	.form-body .check-box label span { font-size: 14px; }
+	.form-body .check-box label span::before { top: 3px; line-height: 11px; height: 15px; width: 15px; }
+	.modal-form { padding: 20px 0; }
+	.call-btn .btn { text-align: left; width: 100%; }
+	.track-order-content .call-btn .btn { text-align: center; width: 100%; font-size: 12px; padding: 5px; }
+	.track-order-content .call-btn .btn i { margin-right: 10px; }
+	.details-id .call-btn { text-align: left; }
+	.referal-list .list_ref-inner { margin-bottom: 50px; position: relative; }
+	.referal-list .ref-img { position: unset; }
+	.referal-list .ref-img:after { transform: rotate(90deg) translateY(-50%); right: 50%; bottom: -30px; top: auto; }
+	.already-acc { font-size: 14px; }
+	.float-form .form-group.edit-profile-img .custom-add-image { font-size: 12px; width: 170px; }
+	.float-form .form-group.edit-profile-img .edit-img img { width: 100px; height: 100px; }
+	.review-content .user-name-date .review-date span { font-size: 14px; padding-left: 20px; width: 100px; }
+	.review-content .user-name-date h3 { width: calc(100% - 100px); }
+	.review-content .user-name-date .review-date span::before { font-size: 16px; }
+	.float-form .form-group .login_radio label { font-size: 12px; }
+	.availability-popup h2 { font-size: 20px; }
+	.copyright p { padding: 0 30px; }
+	#myBtn { right: 0; }
+}
+@media (max-width:425px) {
+	.rest-detail-content>ul>li { font-size: 10px; }
+	.rest-detail-content>ul>li>i { font-size: 10px; }
+	.rest-detail-content>ul>li>img#map_direction { height: 10px; }
+	.header-user { margin-right: 0; }
+	.noti-cart>ul>li a { font-size: 16px; padding-top: 11px; }
+	.noti-cart>ul>li a#bookmark_head { padding-top: 7px; }
+	.header-user span { width: 15px; }
+	.noti-cart>ul>li.notification { padding-right: 0; }
+	.logo img { height: 30px; }
+	button.btn.res-review:before { margin-right: 5px; }
+	#review_form #submit_review { margin-top: 15px; font-size: 14px; padding: 6px 10px; }
+	button.btn.res-menu:before, button.btn.res-review:before { display: none; }
+	.slider-checkbox-main { top: 50px; }
+	.login_social a.btn-social { padding-left: 30px; font-size: 12px; }
+	.login_social a.btn-social:before { width: 25px; background-size: 15px; background-position: 5px 9px; }
+	.profile-page-title .nav-tabs .nav-link { font-size: 10px; }
+	.float-form .form-group .login_radio label { font-size: 11px; }
+}
+@media (max-width:400px) {
+	.popular-rest-box .popular-rest-img, .order-food-section .restaurant-box-row .popular-rest-img { height: 100px; }
+	.cart-content-table table>tbody>tr>td.item-name { width: 65%; }
+	.modal-body .forgot-image img { height: 150px; }
+	.std-modal .modal-header .modal-title { font-size: 18px; }
+	.popular-rest-box .popular-rest-img { height: 150px; }
+	.noti-popup { transform: translate(-72%, 100%); }
+	#form_front_login .link { width: 100%; text-align: left; padding-left: 0; }
+	.bootstrap-datetimepicker-widget { left: -70px !important; width: 260px !important; position: absolute; right: auto }
+	.bootstrap-datetimepicker-widget * { font-size: 12px !important; padding: 5px }
+	.booking-option.pick-date .booking-option-cont { width: 100%; }
+	.availability-popup .btn { font-size: 11px; padding: 5px 2px; }
+}
+@media (max-width:375px) {
+	.address-btn .btn { font-size: 11px; margin-left: 0; }
+	.your_cart-c .your-cart-title h3 { font-size: 13px; }
+	.your_cart-c .your-cart-title h6 { font-size: 11px; }
+	.your_cart-c .your-cart-main .res-view-all { padding: 3px 5px; font-size: 10px; }
+	.your_cart-c .your-cart-title h3 i { font-size: 14px; line-height: 18px; }
+	.login_social a.btn-social { font-size: 11px; }
+	.custom-add-image:before { height: 11px; width: 15px; background-size: cover; margin-right: -15px; }
+	.float-form .form-group.edit-profile-img .custom-add-image { font-size: 11px; width: 150px; }
+	.float-form .form-group.edit-profile-img .edit-img input#Image { width: 150px; }
+	.custom-add-image { padding: 3px 20px 6px 6px; }
+	.float-form .form-group.edit-profile-img .edit-img img { width: 80px; height: 80px; }
+	.float-form .form-group.edit-profile-img label { width: 160px; line-height: 1.6; }
+	.profile-page-title .nav-tabs .nav-link { font-size: 8px; }
+}
+@media screen and (max-width:575px) {
+	.details-id-img.logo-img { width: 50%; }
+	.details-id-content .details-id-text p { margin-top: 10px; }
+}
